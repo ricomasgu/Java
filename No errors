@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class WithoutErrors {
 
-  //This method obtains and returns an int without errors. In this case we can    
+  //This method obtains and returns an int without errors. In this case we can use the parameter.
   public int intWithoutErrors(int accountant){
         Scanner scan = new Scanner(System.in);
         boolean correct = false;
