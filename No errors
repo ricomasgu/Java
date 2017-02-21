@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Riki
+ */
+public class WithoutErrors {
+
+  //This method obtains and returns an int without errors. In this case we can    
+  public int intWithoutErrors(int accountant){
+        Scanner scan = new Scanner(System.in);
+        boolean correct = false;
+        int result = 0, i = 0;
+        do{
+            if(scan.hasNextInt()){
+                result = scan.nextInt();
+                correct = true;
+            }
+            else{
+                scan.next();
+            }
+            i++;
+        }while(!correct&&i<=accountant);
+        return result;
+    }
+
+  //This method obtains and returns an int without errors  
+  public int intWithoutErrors(){
+        Scanner scan = new Scanner(System.in);
+        boolean correct = false;
+        int result = 0;
+        do{
+            if(scan.hasNextInt()){
+                result = scan.nextInt();
+                correct = true;
+            }
+            else{
+                scan.next();
+            }
+        }while(!correct);
+        return result;
+    }
+}
